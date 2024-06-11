@@ -55,7 +55,7 @@ class RegisterForm extends Component{
         return(
             <div className="login-form-container">
             {!showSubmitSuccess && 
-              <form className="form-container" onSubmit={this.onSubmitForm}>
+              <form className="form-content-container" onSubmit={this.onSubmitForm}>
                 <div className="input-container">
                   <label htmlFor="Username" className="label">
                     Username
@@ -64,7 +64,7 @@ class RegisterForm extends Component{
                     onChange={this.onChangeUsername}
                     id="Username"
                     type="text"
-                    className="input"
+                    className="login-input"
                     placeholder="Username"
                     value={username}
                   />
@@ -79,7 +79,7 @@ class RegisterForm extends Component{
                     value={password}
                     placeholder="Password"
                     type="Password"
-                    className="input"
+                    className="login-input"
                   />
                 </div> 
                 <button type="submit" className="register-btn">
@@ -89,7 +89,7 @@ class RegisterForm extends Component{
             </form>
             }
             {showSubmitSuccess && <p className="success-message">{resultMsg}</p>}
-            {showSubmitSuccess && <button onClick={this.onCreateAccount} className='create-btn'>Goto Login Page</button>}
+            {showSubmitSuccess && <button onClick={this.onCreateAccount} className='user-create-btn'>Goto Login Page</button>}
       </div>
         )
     }

@@ -7,6 +7,12 @@
 .heading{
     color: #3e403f;
 }
+ 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .products{
     display: flex;
@@ -27,16 +33,20 @@
     border: 2px solid #0f0f0f;
     border-radius: 5px;
     height: 35px;
+    margin-bottom: 20px;
   }
 
-.input{
-    margin-bottom: 10px;
+.search-input{
+    background-color: transparent;
     border: none;
+    height: 35px;
+    outline: none;
 }  
   
 .search-btn{
     height: 35px;
     width: 50px;
+    border: none;
     cursor: pointer;
 }
 
@@ -87,6 +97,9 @@
     padding: 10px;
     text-decoration: none;
     margin-right: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .create-section{

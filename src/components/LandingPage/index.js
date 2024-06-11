@@ -1,5 +1,6 @@
 import { Component } from "react"
 import { v4 as uuidv4 } from "uuid"
+import Cookies from 'js-cookie'
 import { IoSearch } from "react-icons/io5"
 import { BsFilterRight } from "react-icons/bs"
 import { IoMdClose } from "react-icons/io"
@@ -104,7 +105,7 @@ class LandingPage extends Component {
             name: newProductName,
             price: parseFloat(newProductPrice),
             quantity: parseInt(newProductQuantity, 10)
-        };
+        }
         this.setState({
             productsList: [...productsList, newProduct],
             newProductName: "",
@@ -139,6 +140,12 @@ class LandingPage extends Component {
         )
     }
 
+    onLogout = () => {
+      Cookies.remove("token")
+      const {history} = this.props
+      history.replace('/login')
+    }
+
     render() {
         const { productsList, resultantSearchValue, activeOptionId } = this.state
         
@@ -148,10 +155,13 @@ class LandingPage extends Component {
 
         return(
             <div className="landing-page-container">
-                <h1 className="heading">Products Cart</h1>
+                <div className="header">
+                  <h1 className="heading">Products Cart</h1>  
+                  <button onClick={this.onLogout} className="create-btn">Logout</button>
+                </div>
                 <form className="form-container" onSubmit={this.onSubmitForm}>
                 <div className="search-bar">
-                  <input onChange={this.onSearch} type="search" className="input" placeholder="Search..."/>
+                  <input onChange={this.onSearch} type="search" className="search-input" placeholder="Search..."/>
                   <button type="submit" className="search-btn"><IoSearch /></button>
                 </div>
                 </form>

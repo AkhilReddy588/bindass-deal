@@ -5,9 +5,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } 
   
-  .form-container {
+  .form-content-container{
     background-color: #f7f7f7;
     padding: 20px;
     display: flex;
@@ -16,16 +16,14 @@
     border-radius: 10px;
     width: 350px;
   }
-  .login-page-logo {
-    width: 120px;
-  }
+  
   .input-container {
     margin-top: 40px;
   }
   .label {
     color: #333333; 
   }
-  .input {
+  .login-input {
     width: 90%;
     outline: none;
     border-radius: 5px;
@@ -60,7 +58,7 @@
     }
   }
   
-  .create-btn{
+  .user-create-btn{
     background: none;
     border: none;
     color: #716dbe;

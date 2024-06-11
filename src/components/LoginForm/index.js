@@ -19,7 +19,7 @@ class LoginForm extends Component {
     const {history} = this.props
     history.replace('/bindass-deal')
     Cookies.set('token', token, {expires: 60})
-  }
+  } 
 
   onSubmitFailure = () => {
     this.setState({showSubmitError: true})
@@ -61,7 +61,7 @@ class LoginForm extends Component {
     }
     return (
       <div className="login-form-container">
-        <form className="form-container" onSubmit={this.onSubmitForm}>
+        <form className="form-content-container" onSubmit={this.onSubmitForm}>
           <div className="input-container">
             <label htmlFor="Username" className="label">
               Username
@@ -70,7 +70,7 @@ class LoginForm extends Component {
               onChange={this.onChangeUsername}
               id="Username"
               type="text"
-              className="input"
+              className="login-input"
               placeholder="Username"
               value={username}
             />
@@ -85,7 +85,7 @@ class LoginForm extends Component {
               value={password}
               placeholder="Password"
               type="Password"
-              className="input"
+              className="login-input"
             />
           </div>
           <button type="submit" className="login-btn">
@@ -93,7 +93,7 @@ class LoginForm extends Component {
           </button>
           {showSubmitError && <p className="error-message">Invalid username or password</p>}
 
-          <button onClick={this.onCreateAccount} className='create-btn'>Create Account</button>
+          <button onClick={this.onCreateAccount} className='user-create-btn'>Create Account</button>
         </form>
       </div>
     )

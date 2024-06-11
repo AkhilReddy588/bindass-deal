@@ -7,6 +7,7 @@
 .heading{
     color: #3e403f;
 }
+
  
 .header{
     display: flex;
@@ -100,6 +101,18 @@
     cursor: pointer;
     border: none;
     outline: none;
+}
+
+@media screen and (max-width: 576px) {
+    .heading{
+        font-size: 22px;
+    }
+    .products-header{
+        flex-direction: row;
+    }
+    .create-btn{
+        padding: 5px;
+    }
 }
 
 .create-section{

@@ -108,7 +108,7 @@
         font-size: 22px;
     }
     .products-header{
-        flex-direction: row;
+        flex-direction: column;
     }
     .create-btn{
         padding: 5px;

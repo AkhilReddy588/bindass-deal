@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bindass-deal/static/css/main.125dbbca.css",
+    "main.css": "/bindass-deal/static/css/main.5660869c.css",
     "main.js": "/bindass-deal/static/js/main.c0bd1c22.js",
     "static/js/453.ffaf64c9.chunk.js": "/bindass-deal/static/js/453.ffaf64c9.chunk.js",
     "index.html": "/bindass-deal/index.html",
-    "main.125dbbca.css.map": "/bindass-deal/static/css/main.125dbbca.css.map",
+    "main.5660869c.css.map": "/bindass-deal/static/css/main.5660869c.css.map",
     "main.c0bd1c22.js.map": "/bindass-deal/static/js/main.c0bd1c22.js.map",
     "453.ffaf64c9.chunk.js.map": "/bindass-deal/static/js/453.ffaf64c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.125dbbca.css",
+    "static/css/main.5660869c.css",
     "static/js/main.c0bd1c22.js"
   ]
 }

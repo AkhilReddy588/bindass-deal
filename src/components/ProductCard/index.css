@@ -1,0 +1,49 @@
+.product-card{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    list-style-type: disc;
+    width: 300px;
+    margin: 10px;
+    margin-left: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-name{
+    color: #3e403f;
+    font-size: 18px;
+}
+
+.quantity{
+    font-weight: 500;
+}
+
+.card-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edit-btn{
+    background-color: rgb(10, 130, 243);
+    color: #ffffff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.delete-btn{
+    background-color: rgb(237, 107, 107);
+    color: #ffffff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}

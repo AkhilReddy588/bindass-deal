@@ -12,7 +12,7 @@ const App = () => (
     <Switch>
       <Route exact path="/login" component={LoginForm} />
       <Route exact path="/register" component={RegisterForm} />
-      <ProtectedRoute exact path='/' component={LandingPage} />
+      <ProtectedRoute exact path='/bindass-deal' component={LandingPage} />
     </Switch>
   </BrowserRouter>
 )

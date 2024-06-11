@@ -11,6 +11,12 @@
     justify-content: space-between;
 }
 
+@media screen and (max-width: 576px){
+    .product-card{
+        width: 350px;
+    }
+}
+
 .product-name{
     color: #3e403f;
     font-size: 18px;

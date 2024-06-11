@@ -157,7 +157,7 @@ class LandingPage extends Component {
             <div className="landing-page-container">
                 <div className="header">
                   <h1 className="heading">Products Cart</h1>  
-                  <button onClick={this.onLogout} className="create-btn">Logout</button>
+                  <button onClick={this.onLogout} className="logout-btn">Logout</button>
                 </div>
                 <form className="form-container" onSubmit={this.onSubmitForm}>
                 <div className="search-bar">

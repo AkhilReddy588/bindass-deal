@@ -17,7 +17,7 @@ class LoginForm extends Component {
 
   onSubmitSuccess = token => {
     const {history} = this.props
-    history.replace('/bindass-deal')
+    history.replace('/')
     Cookies.set('token', token, {expires: 60})
   }
 
